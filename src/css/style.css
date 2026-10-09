@@ -1,0 +1,142 @@
+:root {
+  --color-1: hsl(172, 67%, 45%);
+  --color-2: hsl(183, 100%, 15%);
+  --color-3: hsl(186, 14%, 43%);
+  --color-4: hsl(184, 14%, 56%);
+  --color-5: hsl(185, 41%, 84%);
+  --color-6: hsl(189, 47%, 97%);
+  --color-7: hsl(0, 100%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Mono", sans-serif;
+  background-color: var(--color-5);
+}
+
+header {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+main {
+  background-color: var(--color-7);
+  padding: 2rem;
+  border-radius: 2rem 2rem 0 0;
+
+  .wrapperone {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+input {
+  margin-top: 0.5rem;
+  background-color: var(--color-5);
+  border: none;
+  height: 3rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  font-family: "Space Mono", sans-serif;
+  text-align: end;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  color: var(--color-2);
+}
+
+input::placeholder {
+  color: var(--color-2);
+}
+
+input:focus {
+  outline: 2px solid var(--color-1);
+  border: none;
+}
+
+.btnGroup {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  button {
+    width: 9rem;
+    height: 3rem;
+    background-color: var(--color-2);
+    border: none;
+    color: var(--color-7);
+    margin-bottom: 1rem;
+    font-family: "Space Mono", sans-serif;
+    font-size: 1.5rem;
+    border-radius: 0.325rem;
+  }
+
+  .custom {
+    margin-top: 0;
+    width: 9rem;
+    height: 3rem;
+    background-color: var(--color-6);
+    border: none;
+    color: var(--color-2);
+    margin-bottom: 1rem;
+    font-family: "Space Mono", sans-serif;
+    font-size: 1.5rem;
+    border-radius: 0.325rem;
+  }
+}
+
+.labelError {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  background-color: var(--color-2);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  p {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-7);
+    border: 1px solid red;
+
+    span {
+      font-size: 0.75rem;
+      color: var(--color-4);
+    }
+  }
+
+  button {
+    border: 1px solid red;
+    grid-column-start: 1 / -1;
+    background-color: var(--color-1);
+    font-family: "Space Mono", sans-serif;
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+}
+
+label,
+.label {
+  color: var(--color-3);
+}
+
+footer {
+  opacity: 0;
+}
+
+.error {
+  color: rgb(255, 60, 0);
+  opacity: 0;
+}

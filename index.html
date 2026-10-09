@@ -9,25 +9,53 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/css/style.css" />
     <script defer src="./src/main.js"></script>
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
-    <p>Bill</p>
-    <input type="number" name="" id="" />
-    <p>Select Tip %</p>
-    <button>5%</button>
-    <button>10%</button>
-    <button>15%</button>
-    <button>25%</button>
-    <button>50%</button>
-    <button>Custom</button>
-    <p>Number of People</p>
-    <p>Can't be zero</p>
-    <p>Tip Amount <span>/ person</span></p>
-    <p>Total <span>/ person</span></p>
-    <button>Reset</button>
+    <header>
+      <img src="./images/logo.svg" alt="Logo" width="84px" />
+    </header>
+    <main>
+      <div class="wrapperone">
+        <label for="bill">Bill</label>
+        <input type="number" name="bill" id="bill" placeholder="142.55" />
+      </div>
+      <p class="label">Select Tip %</p>
+      <div class="btnGroup">
+        <button>5%</button>
+        <button>10%</button>
+        <button>15%</button>
+        <button>25%</button>
+        <button>50%</button>
+        <input
+          type="number"
+          name="tip"
+          id="tip"
+          class="custom"
+          placeholder="Custom"
+        />
+      </div>
+      <div class="labelError">
+        <label for="people">Number of People</label>
+        <p class="error">Can't be zero</p>
+      </div>
+      <input type="number" name="people" id="people" placeholder="5" />
+      <div class="total">
+        <p>Tip Amount <span>/ person</span></p>
+        <p>$4.27</p>
+        <p>Total <span>/ person</span></p>
+        <p>$32.79</p>
+        <button>Reset</button>
+      </div>
+    </main>
 
     <footer class="attribution">
       Challenge by
